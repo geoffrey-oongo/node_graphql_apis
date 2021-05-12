@@ -12,7 +12,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
-const url = "<Your MongoDB urL>";
+
 const fileStroge = multer.diskStorage({
   destination: (res, file, cb) => {
     cb(null, "images");
